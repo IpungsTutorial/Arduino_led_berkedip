@@ -1,0 +1,14 @@
+// lampu led berkedip
+
+int led = 13;                   // variabel integer led
+
+void setup() {                  // metode setup () dijalankan hanya sekali
+  pinMode(led, OUTPUT);         // pin yang dipilih sebagai keluaran digital
+}
+
+void loop() {                   // pengulangan metode loop ()
+  digitalWrite(led, HIGH);      // menyalakan led 
+  delay(1000);                  // menghentikan program selama 1000 milidetik
+  digitalWrite(led, LOW);       // mematikan led 
+  delay(1000);                  // menghentikan program selama 1000 milidetik
+}
